@@ -1,5 +1,5 @@
 ---
-name: Publish Ansible role to Galaxy
+name: Publish Ansible role to Bulumas Galaxy
 description: Publish Ansible role to Galaxy
 author: Michael Buluma <bulumaknight@gmail.com>
 

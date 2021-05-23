@@ -46,7 +46,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: galaxy
-        uses: robertdebock/galaxy-action@1.1.0
+        uses: buluma/galaxy-action@1.1.0
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
 ```
@@ -68,14 +68,14 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: molecule
-        uses: robertdebock/molecule-action@2.6.3
+        uses: buluma/molecule-action@2.6.3
   release:
     needs:
       - test
     runs-on: ubuntu-latest
     steps:
       - name: galaxy
-        uses: robertdebock/galaxy-action@1.1.0
+        uses: buluma/galaxy-action@1.1.0
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
 ```
@@ -96,7 +96,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: galaxy
-        uses: robertdebock/galaxy-action@1.1.0
+        uses: buluma/galaxy-action@1.1.0
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
           path: my_role

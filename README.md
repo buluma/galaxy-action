@@ -1,5 +1,7 @@
 # Galaxy action
 
+[![Yaml Lint](https://github.com/buluma/galaxy-action/actions/workflows/yamllint.yml/badge.svg)](https://github.com/buluma/galaxy-action/actions/workflows/yamllint.yml)
+
 A GitHub action to publish your [Ansible](https://www.ansible.com/) role to [Galaxy](https://galaxy.ansible.com/).
 
 ## Requirements

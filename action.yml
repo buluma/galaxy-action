@@ -1,0 +1,22 @@
+name: Publish Ansible role to Galaxy
+description: Publish Ansible role to Galaxy
+author: Michael Buluma <bulumaknight@gmail.com>
+
+inputs:
+  galaxy_api_key:
+    description: Your personal Galaxy key found under Galaxy -> Your Profile -> Preferences -> API Key
+    required: true
+  path:
+    description: The (relative) location of your role.
+    required: false
+    default: "./"
+ 
+runs:
+  using: docker
+  image: 'docker://buluma/github-action-galaxy'
+  env:
+    galaxy_api_key: ${{ inputs.galaxy_api_key }}
+
+branding:
+  icon: play  
+  color: blue

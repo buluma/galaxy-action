@@ -2,6 +2,7 @@
 name: Yaml Lint
 on:
   push:
+  workflow_dispatch:
 jobs:
   yamllint:
     runs-on: ubuntu-20.04

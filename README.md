@@ -70,7 +70,7 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: molecule
-        uses: buluma/molecule-action@2.6.3
+        uses: buluma/molecule-action@v4.0.5
   release:
     needs:
       - test

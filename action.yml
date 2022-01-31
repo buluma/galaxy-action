@@ -1,6 +1,6 @@
 ---
-name: Publish Ansible Role to Galaxy
-description: Publish Ansible role to Galaxy
+name: Ansible Role to Galaxy Publisher
+description: Publish a single Ansible role to Galaxy
 author: Michael Buluma <bulumaknight@gmail.com>
 
 inputs:

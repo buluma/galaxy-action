@@ -52,7 +52,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: galaxy
-        uses: buluma/galaxy-action@v1.0.2
+        uses: buluma/galaxy-action@v1.0.3
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
 ```
@@ -81,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: galaxy
-        uses: buluma/galaxy-action@v1.0.2
+        uses: buluma/galaxy-action@v1.0.3
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
 ```
@@ -102,7 +102,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: galaxy
-        uses: buluma/galaxy-action@v1.0.2
+        uses: buluma/galaxy-action@v1.0.3
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
           path: my_role

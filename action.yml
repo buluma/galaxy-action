@@ -10,7 +10,7 @@ inputs:
   git_branch:
     description: The git branch you want to upload.
     required: false
-    default: "master"
+    default: ${{ github.ref_name }}
   path:
     description: The (relative) location of your role.
     required: false
